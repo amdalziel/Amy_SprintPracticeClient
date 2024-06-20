@@ -21,6 +21,7 @@ public class RESTClient {
     private HttpClient client;
 
 
+//    Recipe
     public <T> T getGETResponseFromHTTPRequest(String requestParameter) {
         HttpRequest request = HttpRequest.newBuilder().uri(URI.create(serverURL)).build();
 
@@ -116,6 +117,13 @@ public class RESTClient {
         return null;
     }
 
+
+
+//    getPOSTResponseFromHTTP - recipes
+//    getPUTResponseFromHTTP - recipes
+
+//    getPOSTResponseFromUserHTTP - create user
+//    getDELETEResponseFromUserHTTP ???
 
 
 
